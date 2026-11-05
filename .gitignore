@@ -1,0 +1,8 @@
+node_modules
+dist
+.slidev
+.DS_Store
+*.log
+slides-export*.pdf
+slides-export*/
+.env

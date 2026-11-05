@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "skills": {
+    "cgs-design": {
+      "source": "cgs-earth/cgs-design-skill",
+      "sourceType": "github",
+      "skillPath": "cgs-design/SKILL.md",
+      "computedHash": "bf9bd376acb7fac5a1fbb7d70b42f4cf3b9c84e4489ca326764d8d8bc83603ed",
+      "installMode": "copy"
+    },
+    "geoconnex-querying": {
+      "source": "internetofwater/geoconnex.us",
+      "sourceType": "github",
+      "skillPath": "skills/geoconnex-querying/SKILL.md",
+      "computedHash": "556bd00b4fae2b5200af25c832501c5cc6bcf6c7a4854cc00655382f1b1cfa06",
+      "installMode": "copy"
+    },
+    "geoconnex-submission": {
+      "source": "internetofwater/geoconnex.us",
+      "sourceType": "github",
+      "skillPath": "skills/geoconnex-submission/SKILL.md",
+      "computedHash": "c4fc106ee561c5bec2f86279083361c112bb6db7c3eba0c1c0a99d5068eade5b",
+      "installMode": "copy"
+    }
+  }
+}

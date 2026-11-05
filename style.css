@@ -1,0 +1,49 @@
+:root {
+  --continental: #46AB9D;
+  --fluvial: #2C84B9;
+  --rayleigh: #86C1E2;
+  --cumulus: #C9DEE8;
+  --prairie: #F9C609;
+  --cream: #FEFCF5;
+  --slate: #82848B;
+  --pavement: #48535B;
+  --slidev-theme-primary: #2C84B9;
+}
+.slidev-layout {
+  font-family: Aptos, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  background: var(--cream);
+  color: var(--pavement);
+  font-size: 1.15rem;
+}
+h1, h2, h3, .slidev-layout h1 {
+  font-family: 'District Pro', 'Trebuchet MS', 'Segoe UI', sans-serif;
+  color: var(--fluvial);
+  font-weight: 700;
+}
+.slidev-layout h1 { font-size: 2.3rem; margin-bottom: 0.6rem; }
+.slidev-layout h1::after {
+  content: ''; display: block; width: 90px; height: 5px; margin-top: 10px; border-radius: 3px;
+  background: linear-gradient(90deg, #2c84b9, #46ab9d);
+}
+.slidev-layout a { color: var(--fluvial); border-bottom: none; }
+.slidev-layout code, .slidev-layout .mono { font-family: 'JetBrains Mono', 'Fira Code', monospace; }
+.hero {
+  background: linear-gradient(135deg, #2c84b9, #46ab9d) !important;
+  color: white;
+}
+.hero h1, .hero h2, .hero h3 { color: white; }
+.hero h1::after { background: var(--prairie); }
+.hero a { color: white; }
+.pill {
+  display: inline-block; padding: 2px 14px; border-radius: 999px; font-size: 0.85rem;
+  background: var(--cumulus); color: var(--pavement); margin: 2px;
+}
+.card {
+  background: white; border-radius: 14px; padding: 14px 18px;
+  border-left: 6px solid var(--continental); box-shadow: 0 2px 10px rgba(72,83,91,.10);
+}
+.card.blue { border-left-color: var(--fluvial); }
+.card.yellow { border-left-color: var(--prairie); }
+.caption { font-size: 0.85rem; color: var(--slate); }
+.logo-corner { position: absolute; right: 28px; bottom: 18px; height: 28px; opacity: .9; }
+svg text { font-family: Aptos, 'Segoe UI', Arial, sans-serif; }
