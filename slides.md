@@ -1,6 +1,6 @@
 ---
 theme: default
-title: 'Linking the Fabric: Persistent Identifiers and the geoconnex Knowledge Graph'
+title: 'Linking the Fabric: Persistent Identifiers Geoconnex Knowledge Graph'
 info: |
   AWRA 2026 Annual Water Resources Conference, Philadelphia, PA (Nov 9-11)
 author: Colton Loftus
@@ -13,17 +13,17 @@ drawings:
 ---
 
 # Linking the Fabric
-## Persistent Identifiers and the geoconnex Knowledge Graph
+## Persistent Identifiers and the Geoconnex Knowledge Graph
 
 <div class="mt-10 text-lg">
 Colton Loftus · Geoconnex core developer<br/>
 <span class="caption" style="color:#e8f3f7">AWRA Annual Water Resources Conference · Philadelphia · Nov 9-11, 2026</span>
 </div>
 
-<div class="absolute left-16 bottom-8 flex items-center gap-5">
-  <img src="/cgs/CGS-Logo-Horizontal-White.png" class="h-9" />
-  <span style="width:1px;height:30px;background:rgba(255,255,255,.6)"></span>
-  <div style="background:#fff;border-radius:10px;padding:5px 12px;display:flex"><img src="/logos/iow.png" style="height:40px" /></div>
+<div class="absolute left-16 bottom-8 flex items-center gap-4">
+  <div style="display:flex;align-items:center;justify-content:center;height:58px;padding:0 16px;background:#fff;border-radius:12px"><img src="/cgs/CGS-Logo-Horizontal-Color.png" style="height:34px" /></div>
+  <div style="display:flex;align-items:center;justify-content:center;height:58px;padding:0 16px;background:#fff;border-radius:12px"><img src="/logos/usgs.svg" style="height:34px" /></div>
+  <div style="display:flex;align-items:center;justify-content:center;height:58px;padding:0 16px;background:#fff;border-radius:12px"><img src="/logos/iow.png" style="height:42px" /></div>
 </div>
 
 <!--
@@ -34,7 +34,7 @@ Open with the one-sentence pitch: geoconnex gives water features a name that eve
 footer: false
 ---
 
-# Who am I
+# My background
 
 <div class="grid grid-cols-[230px_1fr] gap-8 mt-6 items-center">
 <div>
@@ -43,8 +43,8 @@ footer: false
 <div style="width:230px;text-align:center;margin-top:2px;font-size:1rem"><a href="mailto:cloftus@lincolninst.edu" style="color:#48535B">cloftus@lincolninst.edu</a></div>
 </div>
 <div class="space-y-4">
-<div style="display:flex;align-items:center;gap:18px"><div style="width:130px;flex:none;display:flex;justify-content:center"><img src="/cgs/CGS-Logo-Horizontal-Color.png" style="width:130px" /></div><div style="flex:1;background:#E4EFF5;border-radius:18px;padding:18px 24px;color:#48535B"><b style="color:#2C84B9">Software engineer, Lincoln Institute of Land Policy's Center for Geospatial Solutions</b><br/>building global water data infrastructure</div></div>
-<div style="display:flex;align-items:center;gap:18px"><div style="width:130px;flex:none;display:flex;justify-content:center"><img src="/logos/iow.png" style="width:112px" /></div><div style="flex:1;background:#DDF1EE;border-radius:18px;padding:18px 24px;color:#48535B"><b style="color:#2C84B9">Geoconnex core developer</b>, working alongside Dave Blodgett (USGS) and the <b style="color:#2C84B9">Internet of Water</b> community</div></div>
+<div style="display:flex;align-items:center;gap:18px"><div style="width:130px;flex:none;display:flex;justify-content:center"><img src="/cgs/CGS-Logo-Horizontal-Color.png" style="width:130px" /></div><div style="flex:1;background:#E4EFF5;border-radius:18px;padding:18px 24px;color:#48535B">I'm a <b style="color:#2C84B9">software engineer</b> at the <b style="color:#2C84B9">Lincoln Institute of Land Policy's Center for Geospatial Solutions</b><br/>building global water data software infrastructure</div></div>
+<div style="display:flex;align-items:center;gap:18px"><div style="width:130px;flex:none;display:flex;flex-direction:column;align-items:center;gap:10px"><img src="/logos/usgs.svg" style="width:104px" /><img src="/logos/iow.png" style="width:108px" /></div><div style="flex:1;background:#DDF1EE;border-radius:18px;padding:18px 24px;color:#48535B"><b style="color:#2C84B9">Geoconnex core developer</b>, working alongside Dave Blodgett (USGS) and the <b style="color:#2C84B9">Internet of Water</b> community</div></div>
 </div>
 </div>
 
@@ -55,13 +55,13 @@ Optional: mention Princeton CS alum, recent talks (FOSS4G 2026, Harvard CGA).
 
 ---
 
-# The problem: hydrologic features lack stable representations and links across datasets
+# The problem: hydrologic features lack stable representations and links to identifiers across datasets
 
 <style>
 h1 { font-size: 1.85rem !important; line-height: 1.2; }
 </style>
 
-<svg viewBox="0 0 900 405" style="width:89%;display:block;margin:0 auto">
+<svg viewBox="0 0 900 418" style="width:89%;display:block;margin:0 auto">
   <g stroke="#82848B" stroke-width="2" stroke-dasharray="5 4" fill="none">
     <path d="M90 100 H250"/><path d="M90 250 H250"/><path d="M90 100 V250"/><path d="M250 100 V250"/>
     <path d="M90 100 L250 250"/><path d="M250 100 L90 250"/>
@@ -78,10 +78,12 @@ h1 { font-size: 1.85rem !important; line-height: 1.2; }
   <circle cx="250" cy="250" r="36" fill="#C9DEE8"/><WaterIcon name="aquifer" :size="44" color="#2C84B9" :x="228" :y="228"/>
   <text x="250" y="308" text-anchor="middle" style="font-size:15px;font-weight:700" fill="#48535B">Basin</text>
   <text x="250" y="325" text-anchor="middle" class="mono" style="font-size:12px" fill="#2C84B9">HUC 14080104</text>
-  <text x="170" y="374" text-anchor="middle" style="font-size:15px" fill="#82848B">The same river may have different or confusing</text>
-  <text x="170" y="394" text-anchor="middle" style="font-size:15px" fill="#82848B">ID relationships across datasets. Hard to query.</text>
-  <path d="M340 175 L520 175" stroke="#F9C609" stroke-width="5" marker-end="url(#a)"/>
-  <defs><marker id="a" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8z" fill="#F9C609"/></marker></defs>
+  <text x="170" y="372" text-anchor="middle" style="font-size:15px" fill="#82848B">The same river may have different or</text>
+  <text x="170" y="391" text-anchor="middle" style="font-size:15px" fill="#82848B">confusing ID relationships across datasets.</text>
+  <text x="170" y="410" text-anchor="middle" style="font-size:15px" fill="#82848B">Hard to query and update.</text>
+  <path d="M340 175 L520 175" stroke="#46AB9D" stroke-width="5" marker-end="url(#a)"/>
+  <text x="420" y="157" text-anchor="middle" style="font-size:18px;font-weight:700" fill="#46AB9D">Goal</text>
+  <defs><marker id="a" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8z" fill="#46AB9D"/></marker></defs>
   <g stroke="#46AB9D" stroke-width="3">
     <path d="M700 175 L610 100"/><path d="M700 175 L810 100"/><path d="M700 175 L610 250"/><path d="M700 175 L810 250"/>
   </g>
@@ -160,17 +162,17 @@ h1 { font-size: 1.85rem !important; line-height: 1.2; }
 </div>
 <svg viewBox="0 0 440 310">
   <circle cx="50" cy="150" r="30" fill="#C9DEE8"/><text x="50" y="155" text-anchor="middle" style="font-size:13px" fill="#48535B">Request</text>
-  <rect x="140" y="115" width="110" height="70" rx="14" fill="#2C84B9"/><text x="195" y="145" text-anchor="middle" style="font-size:13px" fill="#fff">geoconnex.us</text><text x="195" y="164" text-anchor="middle" style="font-size:12px" fill="#fff">PID resolver</text>
+  <rect x="140" y="115" width="110" height="70" rx="14" fill="#2C84B9"/><text x="195" y="145" text-anchor="middle" style="font-size:13px" fill="#fff">geoconnex.us</text><text x="195" y="164" text-anchor="middle" style="font-size:14px" fill="#fff">PID resolver</text>
   <path d="M82 150 H138" stroke="#48535B" stroke-width="3"/>
-  <path d="M252 135 Q310 60 353 50" stroke="#F9C609" stroke-width="3" fill="none"/>
-  <path d="M252 150 H353" stroke="#F9C609" stroke-width="3" fill="none"/>
-  <path d="M252 165 Q310 240 353 250" stroke="#F9C609" stroke-width="3" fill="none"/>
+  <path d="M252 135 Q310 60 353 50" stroke="#2C84B9" stroke-width="3.5" fill="none"/>
+  <path d="M252 150 H353" stroke="#2C84B9" stroke-width="3.5" fill="none"/>
+  <path d="M252 165 Q310 240 353 250" stroke="#2C84B9" stroke-width="3.5" fill="none"/>
   <g fill="#46AB9D"><circle cx="385" cy="50" r="30"/><circle cx="385" cy="150" r="30"/><circle cx="385" cy="250" r="30"/></g>
   <WaterIcon name="gage" :size="38" color="#fff" :x="366" :y="31"/>
   <WaterIcon name="dam" :size="38" color="#fff" :x="366" :y="131"/>
   <WaterIcon name="reservoir" :size="38" color="#fff" :x="366" :y="231"/>
   <g style="font-size:11px" fill="#48535B" text-anchor="middle"><text x="385" y="95">USGS</text><text x="385" y="195">State</text><text x="385" y="295">Local</text></g>
-  <text x="300" y="115" fill="#F9C609" style="font-size:12px;font-weight:700">303</text>
+  <text x="300" y="115" fill="#2C84B9" style="font-size:14px;font-weight:700">303</text>
 </svg>
 </div>
 
@@ -181,12 +183,12 @@ h1 { font-size: 1.85rem !important; line-height: 1.2; }
 # Reference features: the shared backbone
 
 <div class="grid grid-cols-3 gap-4 mt-6">
-<div class="card blue flex items-center gap-4"><WaterIcon name="river" :size="46" color="#2C84B9" /><div><b>Mainstems</b><br/><span class="caption">rivers as linear features</span></div></div>
-<div class="card  flex items-center gap-4"><WaterIcon name="huc" :size="46" color="#46AB9D" /><div><b>HUCs</b><br/><span class="caption">watershed boundaries</span></div></div>
-<div class="card yellow flex items-center gap-4"><WaterIcon name="aquifer" :size="46" color="#2C84B9" /><div><b>Aquifers</b><br/><span class="caption">groundwater units</span></div></div>
-<div class="card  flex items-center gap-4"><WaterIcon name="dam" :size="46" color="#46AB9D" /><div><b>Dams</b><br/><span class="caption">infrastructure</span></div></div>
-<div class="card blue flex items-center gap-4"><WaterIcon name="gage" :size="46" color="#2C84B9" /><div><b>Gages</b><br/><span class="caption">monitoring locations</span></div></div>
-<div class="card yellow flex items-center gap-4"><WaterIcon name="state" :size="46" color="#2C84B9" /><div><b>States &amp; counties</b><br/><span class="caption">administrative geographies</span></div></div>
+<div class="card flex items-center gap-4" style="border-left:none"><WaterIcon name="river" :size="46" color="#2C84B9" /><div><b>Mainstems</b><br/><span class="caption">rivers as linear features</span></div></div>
+<div class="card flex items-center gap-4" style="border-left:none"><WaterIcon name="huc" :size="46" color="#46AB9D" /><div><b>HUCs</b><br/><span class="caption">watershed boundaries</span></div></div>
+<div class="card flex items-center gap-4" style="border-left:none"><WaterIcon name="aquifer" :size="46" color="#2C84B9" /><div><b>Aquifers</b><br/><span class="caption">groundwater units</span></div></div>
+<div class="card flex items-center gap-4" style="border-left:none"><WaterIcon name="dam" :size="46" color="#46AB9D" /><div><b>Dams</b><br/><span class="caption">infrastructure</span></div></div>
+<div class="card flex items-center gap-4" style="border-left:none"><WaterIcon name="gage" :size="46" color="#2C84B9" /><div><b>Gages</b><br/><span class="caption">monitoring locations</span></div></div>
+<div class="card flex items-center gap-4" style="border-left:none"><WaterIcon name="state" :size="46" color="#2C84B9" /><div><b>States &amp; counties</b><br/><span class="caption">administrative geographies</span></div></div>
 </div>
 
 <div class="mt-8 text-center">Served via <b>OGC API - Features</b> at <a href="https://reference.geoconnex.us">reference.geoconnex.us</a></div>
@@ -243,7 +245,7 @@ h1 { font-size: 1.85rem !important; line-height: 1.2; }
 
 # Linking across federal agencies
 
-<svg viewBox="0 0 900 420" class="w-full">
+<svg viewBox="0 0 900 420" style="width:86%;display:block;margin:0 auto">
   <g stroke="#46AB9D" stroke-width="3"><path d="M450 195 L130 70"/><path d="M450 195 L450 40"/><path d="M450 195 L770 70"/><path d="M450 195 L130 300"/><path d="M450 195 L450 350"/><path d="M450 195 L770 300"/></g>
   <circle cx="450" cy="195" r="58" fill="#2C84B9"/>
   <WaterIcon name="river" :size="46" color="#fff" :x="427" :y="160"/>
@@ -389,8 +391,8 @@ h1 { font-size: 1.85rem !important; line-height: 1.2; }
   <text x="680" y="110" text-anchor="middle" style="font-size:13px;font-weight:700" fill="#48535B">Dam</text>
   <circle cx="800" cy="135" r="30" fill="#86C1E2"/><WaterIcon name="reservoir" :size="36" color="#fff" :x="782" :y="117"/>
   <text x="800" y="185" text-anchor="middle" style="font-size:13px;font-weight:700" fill="#48535B">Reservoir</text>
-  <circle cx="790" cy="255" r="30" fill="#86C1E2"/><WaterIcon name="model" :size="36" color="#fff" :x="772" :y="237"/>
-  <text x="790" y="305" text-anchor="middle" style="font-size:13px;font-weight:700" fill="#48535B">Model output</text>
+  <circle cx="790" cy="255" r="30" fill="#86C1E2"/><WaterIcon name="dataset" :size="36" color="#fff" :x="772" :y="237"/>
+  <text x="790" y="305" text-anchor="middle" style="font-size:13px;font-weight:700" fill="#48535B">Dataset</text>
   <circle cx="640" cy="270" r="30" fill="#86C1E2"/><WaterIcon name="gage" :size="36" color="#fff" :x="622" :y="252"/>
   <text x="640" y="320" text-anchor="middle" style="font-size:13px;font-weight:700" fill="#48535B">Downstream gage</text>
 </svg>
@@ -413,8 +415,8 @@ layout: hero
 </div>
 </div>
 
-<div class="absolute left-16 bottom-8 flex items-center gap-5">
-  <img src="/cgs/CGS-Logo-Horizontal-White.png" class="h-9" />
-  <span style="width:1px;height:30px;background:rgba(255,255,255,.6)"></span>
-  <div style="background:#fff;border-radius:10px;padding:5px 12px;display:flex"><img src="/logos/iow.png" style="height:40px" /></div>
+<div class="absolute left-16 bottom-8 flex items-center gap-4">
+  <div style="display:flex;align-items:center;justify-content:center;height:58px;padding:0 16px;background:#fff;border-radius:12px"><img src="/cgs/CGS-Logo-Horizontal-Color.png" style="height:34px" /></div>
+  <div style="display:flex;align-items:center;justify-content:center;height:58px;padding:0 16px;background:#fff;border-radius:12px"><img src="/logos/usgs.svg" style="height:34px" /></div>
+  <div style="display:flex;align-items:center;justify-content:center;height:58px;padding:0 16px;background:#fff;border-radius:12px"><img src="/logos/iow.png" style="height:42px" /></div>
 </div>

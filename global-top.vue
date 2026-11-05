@@ -12,6 +12,8 @@ const show = computed(() => {
   <div v-if="show" class="absolute right-7 bottom-4 z-50 flex items-center gap-5" style="opacity:.9">
     <img src="/cgs/CGS-Logo-Horizontal-Color.png" style="height:26px" />
     <span style="width:1px;height:22px;background:#C9DEE8"></span>
+    <img src="/logos/usgs.svg" style="height:26px" />
+    <span style="width:1px;height:22px;background:#C9DEE8"></span>
     <img src="/logos/iow.png" style="height:30px" />
   </div>
 </template>
