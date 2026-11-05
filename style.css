@@ -38,12 +38,16 @@ h1, h2, h3, .slidev-layout h1 {
   display: inline-block; padding: 2px 14px; border-radius: 999px; font-size: 0.85rem;
   background: var(--cumulus); color: var(--pavement); margin: 2px;
 }
+/* Accent stripe is a gradient (not border-left) so the rounded corners clip it cleanly */
 .card {
-  background: white; border-radius: 14px; padding: 14px 18px;
-  border-left: 6px solid var(--continental); box-shadow: 0 2px 10px rgba(72,83,91,.10);
+  --accent: var(--continental);
+  background: linear-gradient(90deg, var(--accent) 0 6px, #fff 6px);
+  border-radius: 14px; padding: 14px 18px 14px 24px;
+  box-shadow: 0 2px 10px rgba(72,83,91,.10);
 }
-.card.blue { border-left-color: var(--fluvial); }
-.card.yellow { border-left-color: var(--prairie); }
+.card.blue { --accent: var(--fluvial); }
+.card.yellow { --accent: var(--prairie); }
+.card.plain { background: #fff; padding-left: 18px; }
 .caption { font-size: 0.85rem; color: var(--slate); }
 .logo-corner { position: absolute; right: 28px; bottom: 18px; height: 28px; opacity: .9; }
 svg text { font-family: Aptos, 'Segoe UI', Arial, sans-serif; }

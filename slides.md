@@ -183,12 +183,12 @@ h1 { font-size: 1.85rem !important; line-height: 1.2; }
 # Reference features: the shared backbone
 
 <div class="grid grid-cols-3 gap-4 mt-6">
-<div class="card flex items-center gap-4" style="border-left:none"><WaterIcon name="river" :size="46" color="#2C84B9" /><div><b>Mainstems</b><br/><span class="caption">rivers as linear features</span></div></div>
-<div class="card flex items-center gap-4" style="border-left:none"><WaterIcon name="huc" :size="46" color="#46AB9D" /><div><b>HUCs</b><br/><span class="caption">watershed boundaries</span></div></div>
-<div class="card flex items-center gap-4" style="border-left:none"><WaterIcon name="aquifer" :size="46" color="#2C84B9" /><div><b>Aquifers</b><br/><span class="caption">groundwater units</span></div></div>
-<div class="card flex items-center gap-4" style="border-left:none"><WaterIcon name="dam" :size="46" color="#46AB9D" /><div><b>Dams</b><br/><span class="caption">infrastructure</span></div></div>
-<div class="card flex items-center gap-4" style="border-left:none"><WaterIcon name="gage" :size="46" color="#2C84B9" /><div><b>Gages</b><br/><span class="caption">monitoring locations</span></div></div>
-<div class="card flex items-center gap-4" style="border-left:none"><WaterIcon name="state" :size="46" color="#2C84B9" /><div><b>States &amp; counties</b><br/><span class="caption">administrative geographies</span></div></div>
+<div class="card plain flex items-center gap-4"><WaterIcon name="river" :size="46" color="#2C84B9" /><div><b>Mainstems</b><br/><span class="caption">rivers as linear features</span></div></div>
+<div class="card plain flex items-center gap-4"><WaterIcon name="huc" :size="46" color="#46AB9D" /><div><b>HUCs</b><br/><span class="caption">watershed boundaries</span></div></div>
+<div class="card plain flex items-center gap-4"><WaterIcon name="aquifer" :size="46" color="#2C84B9" /><div><b>Aquifers</b><br/><span class="caption">groundwater units</span></div></div>
+<div class="card plain flex items-center gap-4"><WaterIcon name="dam" :size="46" color="#46AB9D" /><div><b>Dams</b><br/><span class="caption">infrastructure</span></div></div>
+<div class="card plain flex items-center gap-4"><WaterIcon name="gage" :size="46" color="#2C84B9" /><div><b>Gages</b><br/><span class="caption">monitoring locations</span></div></div>
+<div class="card plain flex items-center gap-4"><WaterIcon name="state" :size="46" color="#2C84B9" /><div><b>States &amp; counties</b><br/><span class="caption">administrative geographies</span></div></div>
 </div>
 
 <div class="mt-8 text-center">Served via <b>OGC API - Features</b> at <a href="https://reference.geoconnex.us">reference.geoconnex.us</a></div>
